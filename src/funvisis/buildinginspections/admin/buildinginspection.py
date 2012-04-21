@@ -33,6 +33,12 @@ class BuildingInspectionAdmin(admin.GeoModelAdmin):
                     'interviewee_phone_number',
                     'interviewee_email')}),
         (
+            u'Datos del edificio',
+            {
+                'fields': (
+                    'building',)}),
+        
+        (
         #FIX NUMBERING
             u'6. Capacidad de ocupación',
             {

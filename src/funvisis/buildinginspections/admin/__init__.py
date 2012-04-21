@@ -31,14 +31,17 @@ from photologue.models import Photo
 from photologue.admin  import PhotoAdmin
 from photologue.admin  import GalleryAdmin
 from funvisis.gallery.admin import FvisGalleryAdmin
+from funvisis.geo.buildings.admin import BuildingAdmin
+from funvisis.geo.buildings.models import Building
 
 from ..models import BuildingInspection
 
-from .building import BuildingInspectionAdmin
+from .buildinginspection import BuildingInspectionAdmin
 
 admin_site = AdminSite('admin_site')
 
 admin_site.register(BuildingInspection, BuildingInspectionAdmin)
+admin_site.register(Building, BuildingAdmin)
 admin_site.register(Gallery, FvisGalleryAdmin)
 admin_site.register(Photo, PhotoAdmin)
 

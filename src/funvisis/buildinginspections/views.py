@@ -3,8 +3,7 @@
 
 import csv
 from django.http import HttpResponse
-from sismocaracas.buildinginspections.models import BuildingInspection
-from sismocaracas.bridgeinspections.models import BridgeInspection
+from funvisis.buildinginspections.models import BuildingInspection
 
 model_url_dict = {
     'edificaciones': BuildingInspection}
